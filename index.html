@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="YoVoy visits apartments in Madrid on your behalf and sends you video, photos and a clear apartment check report." />
+  <title>YoVoy — Apartment checks in Madrid</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a class="brand brand-logo" href="#top" aria-label="YoVoy home"><img src="logo-yovoy.png" alt="YoVoy logo" class="brand-image" /></a>
+      <div class="nav-right">
+        <a href="#how" data-i18n="navHow">How it works</a>
+        <a href="#pricing" data-i18n="navPricing">Pricing</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+        <select id="lang" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="it">IT</option>
+        </select>
+        <a class="btn btn-small" href="#request" data-i18n="navCta">Send listing</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow" data-i18n="eyebrow">Apartment checks in Madrid</div>
+        <h1 data-i18n="heroTitle">Can’t visit the flat? <span>YoVoy.</span></h1>
+        <p class="hero-sub" data-i18n="heroSub">We go to the viewing for you. You get a real walkthrough, photos, a structured checklist and clear information before you decide.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#request" data-i18n="heroCta">Send us the listing</a>
+          <a class="text-link" href="#how" data-i18n="heroSecondary">See how it works →</a>
+        </div>
+      </div>
+
+      <div class="phone-card" aria-label="Example YoVoy apartment check">
+        <div class="phone-top"><span>YoVoy Check</span><span>Madrid</span></div>
+        <div class="mock-photo">
+          <div class="mock-badge" data-i18n="mockLive">Apartment checked</div>
+        </div>
+        <div class="score-grid">
+          <div><b data-i18n="mockNoise">Noise</b><span data-i18n="mockModerate">Moderate</span></div>
+          <div><b data-i18n="mockLight">Natural light</b><span data-i18n="mockHigh">High</span></div>
+          <div><b data-i18n="mockIssues">Visible issues</b><span>3</span></div>
+          <div><b data-i18n="mockLift">Lift</b><span data-i18n="mockYes">Yes</span></div>
+        </div>
+        <div class="mock-footer">
+          <span>🎥 <span data-i18n="mockVideo">Walkthrough</span></span>
+          <span>📸 <span data-i18n="mockPhotos">Photos</span></span>
+          <span>📋 <span data-i18n="mockReport">Report</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem section">
+      <div class="container narrow">
+        <div class="section-kicker" data-i18n="problemKicker">The problem</div>
+        <h2 data-i18n="problemTitle">A listing shows you the apartment. A visit shows you the truth.</h2>
+        <p data-i18n="problemBody">Photos rarely show street noise, common areas, poor light, visible humidity, damaged furniture or what is outside the window. YoVoy gives you the information you would collect if you were physically in Madrid.</p>
+      </div>
+    </section>
+
+    <section id="how" class="section container">
+      <div class="section-kicker" data-i18n="howKicker">How it works</div>
+      <h2 data-i18n="howTitle">From listing to real check in 4 steps.</h2>
+      <div class="steps">
+        <article><span>01</span><h3 data-i18n="step1Title">Send the listing</h3><p data-i18n="step1Body">Paste the Idealista, agency or private listing and tell us what matters to you.</p></article>
+        <article><span>02</span><h3 data-i18n="step2Title">We coordinate</h3><p data-i18n="step2Body">We contact the agency or landlord and arrange the viewing time.</p></article>
+        <article><span>03</span><h3 data-i18n="step3Title">YoVoy</h3><p data-i18n="step3Body">One of us attends the viewing and follows the same structured checking protocol.</p></article>
+        <article><span>04</span><h3 data-i18n="step4Title">You receive everything</h3><p data-i18n="step4Body">Video, photos, observations and the answers collected during the visit.</p></article>
+      </div>
+    </section>
+
+    <section class="section check-section">
+      <div class="container split">
+        <div>
+          <div class="section-kicker" data-i18n="checkKicker">What we check</div>
+          <h2 data-i18n="checkTitle">More than a phone video.</h2>
+          <p data-i18n="checkBody">Every Full Check follows the same framework, so you know what was actually observed and what still needs to be verified.</p>
+        </div>
+        <div class="check-list">
+          <div>🏢 <span data-i18n="check1">Building, entrance, stairs & lift</span></div>
+          <div>🪟 <span data-i18n="check2">Windows, light & outside view</span></div>
+          <div>🔊 <span data-i18n="check3">Street and indoor noise</span></div>
+          <div>🛏️ <span data-i18n="check4">Room, furniture & visible damage</span></div>
+          <div>🚿 <span data-i18n="check5">Bathroom & visible humidity</span></div>
+          <div>🍳 <span data-i18n="check6">Kitchen & appliances</span></div>
+          <div>❄️ <span data-i18n="check7">Heating / AC when present</span></div>
+          <div>❓ <span data-i18n="check8">Your questions to the agent or landlord</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section container">
+      <div class="section-kicker" data-i18n="pricingKicker">Simple pricing</div>
+      <h2 data-i18n="pricingTitle">Choose how you want to see it.</h2>
+      <div class="pricing-grid">
+        <article class="price-card featured">
+          <div class="pill" data-i18n="popular">Most popular</div>
+          <h3 data-i18n="fullTitle">Full Check</h3>
+          <div class="price">
+          <span class="old-price">€39</span>
+          <span class="new-price">€29</span>
+          </div>
+          <p data-i18n="fullDesc">We attend the viewing and document what you cannot see from the listing.</p>
+          <ul>
+            <li data-i18n="full1">Appointment coordination</li>
+            <li data-i18n="full2">Video walkthrough</li>
+            <li data-i18n="full3">Photos</li>
+            <li data-i18n="full4">Structured checklist</li>
+            <li data-i18n="full5">Visible issues & common areas</li>
+            <li data-i18n="full6">Questions to agent / landlord</li>
+            <li data-i18n="full7">Clear visit summary</li>
+          </ul>
+          <a class="btn full" href="#request" data-i18n="chooseFull">Choose Full Check</a>
+        </article>
+
+        <article class="price-card">
+          <h3 data-i18n="liveTitle">Full Check + Live</h3>
+          <div class="price">
+          <span class="old-price">€49</span>
+          <span class="new-price">€39</span>
+          </div>
+          <p data-i18n="liveDesc">Everything in Full Check, plus you join the viewing live from wherever you are.</p>
+          <ul>
+            <li data-i18n="live1">Everything in Full Check</li>
+            <li data-i18n="live2">Live video call during the viewing</li>
+            <li data-i18n="live3">Ask us to show details in real time</li>
+            <li data-i18n="live4">Ask questions live</li>
+          </ul>
+          <a class="btn secondary full" href="#request" data-i18n="chooseLive">Choose Live</a>
+        </article>
+      </div>
+
+      <div class="supplements">
+        <b data-i18n="suppTitle">Travel & urgency supplements:</b>
+        <span>Zone A: €0</span><span>Zone B1: +€10</span><span>Zone B2: +€15</span><span>Zone B3: +€20</span><span data-i18n="urgent">Urgent &lt;6h: +€10</span>
+      </div>
+    </section>
+
+    <section class="section audience">
+      <div class="container narrow center">
+        <div class="section-kicker" data-i18n="audKicker">Built for newcomers</div>
+        <h2 data-i18n="audTitle">Still abroad? Already in Spain? It doesn’t matter.</h2>
+        <p data-i18n="audBody">YoVoy is made for international students, Erasmus students and young professionals who need someone physically present in Madrid.</p>
+      </div>
+    </section>
+
+    <section id="faq" class="section container narrow">
+      <div class="section-kicker" data-i18n="faqKicker">FAQ</div>
+      <h2 data-i18n="faqTitle">Before you send a listing.</h2>
+      <details>
+        <summary data-i18n="faq1q">Are you a real estate agency?</summary>
+        <p data-i18n="faq1a">No. YoVoy is an independent viewing and concierge service working for the person requesting the check.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq2q">Can you arrange the viewing?</summary>
+        <p data-i18n="faq2a">Yes. With the listing and contact details, we can coordinate the viewing time with the agency or landlord.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq3q">Can I join by video call?</summary>
+        <p data-i18n="faq3a">Yes. Choose Full Check + Live and join the viewing remotely.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq4q">Do you guarantee the apartment or the landlord?</summary>
+        <p data-i18n="faq4a">No. We document what we can observe during the visit and relay information provided by the agent or landlord. We do not certify ownership, legality or hidden defects.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq5q">Can you review a rental contract?</summary>
+        <p data-i18n="faq5a">We can help organize and summarize the document. Legal advice or formal legal review should be handled by a qualified professional.</p>
+      </details>
+    </section>
+
+    <section id="request" class="section cta-section">
+      <div class="container cta-card">
+        <div>
+          <div class="section-kicker light" data-i18n="ctaKicker">Ready?</div>
+          <h2 data-i18n="ctaTitle">Found a flat? Send it to YoVoy.</h2>
+          <p data-i18n="ctaBody">Send the listing and your preferred service. We’ll take it from there.</p>
+        </div>
+        <a class="btn light-btn" id="whatsappCta" href="#" data-i18n="ctaButton">Send the listing</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="brand">YoVoy<span>.</span></div>
+    <p data-i18n="footerText">Independent apartment viewing concierge in Madrid.</p>
+    <small data-i18n="footerNote">YoVoy is an independent apartment viewing service in Madrid. We do not act as a real estate agency, property inspector or legal advisor. © 2026 YoVoy.</small>
+    <small><a href="privacy.html">Privacy Policy</a><br><a href="terms.html">Terms & Conditions</a><br><a href="cancellation.html">Cancellation Policy</a></small>
+  </footer> 
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
