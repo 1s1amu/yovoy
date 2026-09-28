@@ -123,9 +123,9 @@ cta.addEventListener("click", e=>{
   }
   const lang = document.documentElement.lang || "en";
   const messages = {
-    en:"Hi YoVoy! I found a flat in Madrid and I'd like you to check it. Listing: ",
-    es:"¡Hola YoVoy! He encontrado un piso en Madrid y quiero que lo reviséis. Anuncio: ",
-    it:"Ciao YoVoy! Ho trovato un appartamento a Madrid e vorrei farlo controllare. Annuncio: "
+    en:"Hi YoVoy! I found an apartment I’m interested in and I’d like to have it checked. Can I get more information?",
+    es:"Hola, YoVoy. He encontrado un piso que me interesa y me gustaría que lo revisaran. ¿Puedo recibir más información? ",
+    it:"Ciao YoVoy! Ho trovato un appartamento che mi interessa e vorrei farlo controllare. Posso avere più informazioni?"
   };
   window.open(`https://wa.me/${number}?text=${encodeURIComponent(messages[lang])}`, "_blank");
 });
