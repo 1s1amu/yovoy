@@ -89,7 +89,18 @@ details p{color:var(--muted);margin:12px 0 0}
 .footer p{color:var(--muted);font-size:14px}
 .footer small{grid-column:1/-1;color:#8a9592}
 @media(max-width:850px){
-  .nav-right>a:not(.btn),.nav-right select{display:none}
+  .nav-right > a:not(.btn){
+    display:none;}
+  .nav-right select{
+    display:block;
+  }
+  .nav-right{
+    gap:10px;
+  }
+  .nav-right .btn-small{
+    padding:9px 11px;
+    font-size:12px;
+  }
   .hero{grid-template-columns:1fr;gap:48px;padding-top:60px}
   h1{letter-spacing:-3px}
   .phone-card{margin:0;max-width:100%}
