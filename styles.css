@@ -90,35 +90,132 @@ details p{color:var(--muted);margin:12px 0 0}
 .footer small{grid-column:1/-1;color:#8a9592}
 @media(max-width:850px){
   .nav-right > a:not(.btn){
-    display:none;}
+    display:none;
+  }
+
   .nav-right select{
     display:block;
   }
+
   .nav-right{
     gap:10px;
   }
+
   .nav-right .btn-small{
     padding:9px 11px;
     font-size:12px;
   }
-  .hero{grid-template-columns:1fr;gap:48px;padding-top:60px}
-  h1{letter-spacing:-3px}
-  .phone-card{margin:0;max-width:100%}
-  .steps{grid-template-columns:1fr 1fr}
-  .split,.pricing-grid{grid-template-columns:1fr;gap:35px}
-  .cta-card{display:block}
-  .cta-card .btn{margin-top:20px}
+
+  .hero{
+    grid-template-columns:1fr;
+    gap:48px;
+    padding-top:60px;
+  }
+
+  h1{
+    letter-spacing:-3px;
+  }
+
+  .phone-card{
+    margin:0;
+    max-width:100%;
+  }
+
+  .steps{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .split,
+  .pricing-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+  .cta-card{
+    display:block;
+  }
+
+  .cta-card .btn{
+    margin-top:20px;
+  }
 }
+
 @media(max-width:520px){
-  .container{width:min(100% - 26px,1120px)}
-  .nav{height:64px}
-  h1{font-size:48px;letter-spacing:-2.7px}
-  .hero-sub{font-size:17px}
-  .hero-actions{align-items:flex-start;flex-direction:column}
-  .steps,.check-list{grid-template-columns:1fr}
-  .section{padding:68px 0}
-  .cta-card{padding:30px 24px}
-  .pricing-grid{margin-top:30px}
+  .container{
+    width:min(100% - 26px,1120px);
+  }
+
+  .nav{
+    height:64px;
+    gap:10px;
+  }
+
+  .brand-image{
+    max-width:105px;
+    height:auto;
+  }
+
+  .nav-right{
+    gap:7px;
+  }
+
+  .nav-right select{
+    display:block;
+    padding:7px 6px;
+    font-size:12px;
+    border-radius:9px;
+  }
+
+  .nav-right .btn-small{
+    padding:8px 9px;
+    font-size:11px;
+    white-space:nowrap;
+  }
+
+  h1{
+    font-size:42px;
+    line-height:1;
+    letter-spacing:-2.5px;
+  }
+
+  .hero{
+    padding-top:45px;
+    padding-bottom:60px;
+    min-height:auto;
+  }
+
+  .hero-sub{
+    font-size:17px;
+    line-height:1.5;
+  }
+
+  .hero-actions{
+    width:100%;
+    align-items:flex-start;
+    flex-direction:column;
+    gap:14px;
+  }
+
+  .hero-actions .btn{
+    width:100%;
+  }
+
+  .steps,
+  .check-list{
+    grid-template-columns:1fr;
+  }
+
+  .section{
+    padding:68px 0;
+  }
+
+  .cta-card{
+    padding:30px 24px;
+  }
+
+  .pricing-grid{
+    margin-top:30px;
+  }
 }
 .price {
   display: flex;
